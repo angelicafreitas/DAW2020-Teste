@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    h1 Classes nível 1
+    ul 
+        each el in classes
+            li
+                a(href="http://localhost:1234/classes/"+el.codigo)= el.codigo + ' | ' + el.titulo
+
+    footer
+        address [
+            a(href="http://localhost:1234/") Página Inicial
+            span ]

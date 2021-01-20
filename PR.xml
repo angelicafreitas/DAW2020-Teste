@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pr>
+    <meta>
+        <key>Teste/DAW-2020</key>
+        <title>teste</title>
+        <bdate>Januray 2021</bdate>
+        <edate>Januray 2021</edate>
+        <supervisor url="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+    </meta>
+    <team>
+        <member id="a83761">
+            <name>Angélica Freitas</name>
+            <email>a83761@alunos.uminho.pt</email>
+        </member>
+    </team>
+    <abstract>
+        <p>
+            Teste.
+        </p>
+    </abstract>
+    <deliverables>
+        <link url="teste.txt">Respostas</link>
+
+    </deliverables>
+</pr>

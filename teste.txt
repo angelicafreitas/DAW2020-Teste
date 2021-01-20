@@ -1,0 +1,44 @@
+--Exercício 1
+--1.1
+Find ref: "([A-Z]+)\/([A-Z]+)\/([A-Z0-9]+)\/([0-9]+)\/([0-9]+)\/([0-9]+)",
+Replace ref: "$1\/$2\/$3\/$4\/$5\/$6",\n\t_id: "$1_$2_$3_$4_$5_$6",
+
+Find Pai: (.+); Mãe: (.+)",
+Replace Pai: $1; Mãe: $2",\n\tpai: "$1",\n\tmae: "$2",
+
+Find \t([A-z]+):
+Replace \t"$1":
+
+Find "ref": ([A-z/0-9]+),
+Replace "ref": "$1",
+
+Find "date": ([-/0-9]+),
+Replace "date": "$1",
+
+Linha 4128 faltava vírgula. Adicionei manualmente. 
+
+--1.3
+mongoimport -d testedaw -c batismos --jsonArray batismos.json
+
+
+--Exercício 2
+token 
+eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwMDgxMGM2NDFhYmQ1NDU0MDZkZmRkMSIsImxldmVsIjoyLCJlbnRpZGFkZSI6ImVudF9BM0VTIiwiZW1haWwiOiJkYXcyMDIwQHRlc3RlLnVtaW5oby5wdCIsImlhdCI6MTYxMTE1MzI4OCwiZXhwIjoxNjExMTgyMDg4fQ.AFxTHMj7wZgvZPLI6ajT8Dj4qke8ASeZZgBfI5oWhzeGA-f4trnNpOeMExeVEgoohnlKeFkh1VucmkS618tOUY7bXbAI9WX--Ds00UQnc4gUj4oRlInvBvBFY5LOZXkyKNSvgZGSLWc9YpJlcPDlKlva0rCnwaVo4EEcmpid58jyNpzaQ3ihfS9mMi3GA4DcyfITzf1MCSWZsLVYYza5gWQaR5j9fJLTTjN9CZaG3iKUIvOWDROzARfTLZ81Vziz6XrO6XPERvHa6AbPVRii8-jh4um71DxOSgIqTvs41xW7Yl7og-gg_ipPmZODjkVg-FsoWrfUrA9nVEh81zxYXw
+
+--1. a)
+842 processos nível 3
+        {
+            "codigo": "900.10",
+            "titulo": "Execução de atividades de dinamização da sociedade",
+            "id": "http://jcr.di.uminho.pt/m51-clav#c900.10",
+            "status": "A"
+        },
+        {
+            "codigo": "900.20",
+            "titulo": "Execução de atividades de protocolo e comunicação institucional",
+            "id": "http://jcr.di.uminho.pt/m51-clav#c900.20",
+            "status": "A"
+        }
+--1. b) 19
+--1. c) 4
+--1. d) 5

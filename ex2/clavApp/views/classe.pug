@@ -1,0 +1,23 @@
+extends layout
+
+block content
+    h1=classe.titulo + ', nível ' + classe.nivel
+    h5=classe.codigo
+    p=classe.descricao
+    if classe.filhos.length!==0 
+        ul Filhos:
+            each son in classe.filhos
+                li
+                    a(href="http://localhost:1234/classes/"+son.codigo + '?nivel='+ (parseInt(classe.nivel)+1))= son.codigo + ' | ' + son.titulo
+    
+    if classe.nivel=='3'
+        ul Termos:
+            each t in classe.termosInd
+                li
+                    a(href="http://localhost:1234/indice/")= t.termo
+
+
+    footer
+        address [
+            a(href="http://localhost:1234/") Página Inicial
+            span ]

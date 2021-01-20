@@ -1,0 +1,22 @@
+extends layout
+
+block content
+    h1 Termmos índice
+    table
+        tr
+            th Termo
+            th Id
+            th Título
+        each el in indices
+            tr
+                td=el.termo
+                td
+                    a(href="http://localhost:1234/classes/"+ el.idClasse)=el.idClasse
+                td
+                    a(href="http://localhost:1234/classes/"+ el.idClasse)=el.tituloClasse
+
+
+    footer
+        address [
+            a(href="http://localhost:1234/") Página Inicial
+            span ]
